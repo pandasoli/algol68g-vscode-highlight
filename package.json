@@ -4,7 +4,7 @@
 	"publisher": "Algol68g",
 	"displayName": "Algol68g",
 	"description": "Algol68g support",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"repository": {},
 	"engines": {
 		"vscode": "^1.55.0"
@@ -23,14 +23,14 @@
 				"extensions": [
 					".a68"
 				],
-				"configuration": "./language-configuration.json"
+				"configuration": "./settings/language-algol68g.json"
 			}
 		],
 		"grammars": [
 			{
 				"language": "Algol68g",
 				"scopeName": "syntax",
-				"path": "./syntaxes/Algol68g.tmLanguage.json"
+				"path": "./syntaxes/language-algol68g.json"
 			}
 		]
 	},
