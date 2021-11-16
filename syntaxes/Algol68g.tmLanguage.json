@@ -1,0 +1,110 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Algol68g",
+	"fileTypes": [
+		"a68"
+	],
+	"patterns": [
+		{ "include": "#keywords" },
+		{ "include": "#strings" },
+		{ "include": "#comment" },
+		{ "include": "#constants" },
+		{ "include": "#identifiers" },
+		{ "include": "#numbers" },
+		{ "include": "#operators" },
+		{ "include": "#separators" }
+	],
+	"repository": {
+		"constants": {
+			"patterns": [
+				{ "name": "constant.language.false.Algol68g", "match": "\\bFALSE\\b" },
+				{ "name": "constant.language.true.Algol68g", "match": "\\bTRUE\\b" },
+				{ "name": "storage.type.bool.Algol68g", "match": "\\bBOOL\\b" },
+				{ "name": "storage.type.int.Algol68g", "match": "\\bINT\\b" },
+				{ "name": "storage.type.re.Algol68g", "match": "\\bREAL\\b" },
+				{ "name": "storage.type.ch.Algol68g", "match": "\\bCHAR\\b" },
+				{ "name": "storage.type.str.Algol68g", "match": "\\bSTRING\\b" },
+				{ "name": "storage.type.form.Algol68g", "match": "\\bFORMAT\\b" },
+				{ "name": "storage.type.mode.Algol68g", "match": "\\bMODE\\b" },
+				{ "name": "storage.type.op.Algol68g", "match": "\\bOP\\b" },
+				{ "name": "storage.type.ref.Algol68g", "match": "\\bREF\\b" },
+				{ "name": "storage.type.stru.Algol68g", "match": "\\bSTRUCT\\b" },
+				{ "name": "storage.type.cemp.Algol68g", "match": "\\bCOMPL\\b" },
+				{ "name": "storage.type.bits.Algol68g", "match": "\\bBITS\\b" },
+				{ "name": "storage.type.file.Algol68g", "match": "\\bFILE\\b" },
+				{ "name": "storage.type.union.Algol68g", "match": "\\bUNION\\b" },
+				{ "name": "storage.type.sema.Algol68g", "match": "\\bSEMA\\b" },
+				{
+					"name": "variable.language.function.Algol68g",
+					"match": "\\b(new\\ line|FLEX|newline|sqrt|stop|UPB|LWB)\\b"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.Algol68g",
+					"match": "\\b(IF|WHILE|OF|FOR|DO|OD|FI|PROC|BEGIN|END|GO|TO|FROM|THEN|ELIF|PR)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.decimal.Algol68g",
+					"match": "\\b(\\+|−|-)?([0-9]+(\\.[0-9]+)?((⏨|e)(\\+|−|-)?[0-9]+)?|\\.[0-9]+((⏨|e)(\\+|−|-)?[0-9]+)?|⏨(\\+|−|-)?[0-9]+)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.relational.Algol68g",
+					"match": "=|/=|<=|>="
+				},
+				{
+					"name": "keyword.operator.assignment.Algol68g",
+					"match": ":="
+				},
+				{
+					"name": "keyword.operator.arithmetic.Algol68g",
+					"match": "\\+|−|-|×|\\*|UP|/|÷|//|↑|\\*\\*"
+				},
+				{
+					"name": "keyword.operator.assignment.Algol68g",
+					"match": "printf|print|read|system|space|whole|open|getf|get|close|on\\ logical\\ file\\ end|putf|put|associate"
+				},
+				{
+					"name": "keyword.operator.output.Algol68g",
+					"match": "VOID"
+				}
+			]
+		},
+		"separators": {
+			"patterns": [
+				{ "name": "punctuation.separator.comma.Algol68g", "match": "," },
+				{ "name": "punctuation.separator.colon.Algol68g", "match": ":" }
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "variable.other.identifier.Algol68g",
+					"match": "\\b[A-Za-z][0-9A-Za-z]*\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.Algol68g",
+			"begin": "\"",
+			"end": "\""
+		},
+		"comment": {
+			"contentName": "comment.block.Algol68g",
+			"begin": "#",
+			"end": "#"
+
+		}
+	},
+	"scopeName": "syntax"
+}

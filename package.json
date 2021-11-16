@@ -1,0 +1,42 @@
+{
+	"name": "algol68g",
+	"icon": "icon.png",
+	"publisher": "Algol68g",
+	"displayName": "Algol68g",
+	"description": "Algol68g support",
+	"version": "0.0.1",
+	"repository": {},
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "Algol68g",
+				"aliases": [
+					"Algol68g",
+					"Algol68g"
+				],
+				"extensions": [
+					".a68"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "Algol68g",
+				"scopeName": "syntax",
+				"path": "./syntaxes/Algol68g.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4d3264ae-2578-4d3a-a2e5-b3134005330b",
+		"publisherDisplayName": "Algol68g",
+		"publisherId": "e3f121e2-2143-4956-8861-28cd3b5017a1"
+	}
+}
